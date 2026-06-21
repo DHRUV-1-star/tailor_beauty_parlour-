@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shringar - Ladies Tailoring & Beauty Parlour | Premium Stitching & Styling</title>
+  <meta name="description" content="Shringar offers expert ladies tailoring — covered blouses, salwar suits, lehengas, kurtis — plus premium beauty parlour services. Book your appointment today." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">✦ Shringar ✦</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float" id="whatsappFloat" title="Chat on WhatsApp">💬</div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <div class="logo-icon">🌸</div>
+      <div>
+        <div class="logo-text">Shringar</div>
+        <span class="logo-sub">Tailoring & Beauty</span>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#stitching">Stitching</a></li>
+      <li><a href="#beauty">Beauty</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#booking" class="nav-cta">Book Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ For the Modern Indian Woman</div>
+      <h1>
+        Perfect Stitching.<br>
+        <span class="highlight">Timeless Beauty.</span>
+      </h1>
+      <p class="hero-desc">
+        From custom covered blouses to bridal lehengas and everyday kurtis —
+        we stitch your dreams with precision. Paired with top-tier beauty services
+        to make you glow every day.
+      </p>
+      <div class="hero-buttons">
+        <a href="#booking" class="btn-primary" id="heroBookBtn">✦ Book Appointment</a>
+        <a href="#services" class="btn-outline" id="heroServicesBtn">Explore Services →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number"><span data-count="1500" data-suffix="+">0+</span></div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-count="12" data-suffix="+">0+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span data-count="50" data-suffix="+">0+</span></div>
+          <div class="stat-label">Blouse Designs</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1583391733981-8498408ee4b6?w=800&q=80" alt="Beautiful Indian woman in traditional attire" />
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="text-center reveal">
+      <div class="section-tag">Our Expertise</div>
+      <h2 class="section-title">What We <span class="accent">Offer</span></h2>
+      <p class="section-desc">Crafted with love, precision, and decades of expertise — we cover all your stitching and beauty needs under one roof.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" id="serviceBlouse">
+        <div class="service-icon">🪡</div>
+        <h3>Covered Blouse Stitching</h3>
+        <p>Custom-fit covered blouses in all styles — back coverage, high neck, full sleeves, elbow sleeves. Perfect modesty with elegant design.</p>
+        <div class="service-price">Starting ₹350</div>
+        <div>
+          <span class="service-tag">High Neck</span>
+          <span class="service-tag">Full Sleeve</span>
+          <span class="service-tag">Elbow Sleeve</span>
+        </div>
+      </div>
+      <div class="service-card reveal" id="serviceSalwar">
+        <div class="service-icon">👗</div>
+        <h3>Salwar Suit Stitching</h3>
+        <p>Traditional and modern salwar kameez in all cuts — Anarkali, patiala, churidar, straight and more, tailored to your body shape.</p>
+        <div class="service-price">Starting ₹500</div>
+        <div>
+          <span class="service-tag">Anarkali</span>
+          <span class="service-tag">Patiala</span>
+          <span class="service-tag">Churidar</span>
+        </div>
+      </div>
+      <div class="service-card reveal" id="serviceKurti">
+        <div class="service-icon">✂️</div>
+        <h3>Kurti & Tops</h3>
+        <p>Trendy kurtis, Indo-western tops, and crop kurtis made from your chosen fabric with precise measurements and stylish cuts.</p>
+        <div class="service-price">Starting ₹300</div>
+        <div>
+          <span class="service-tag">A-Line</span>
+          <span class="service-tag">Flared</span>
+          <span class="service-tag">Straight Cut</span>
+        </div>
+      </div>
+      <div class="service-card reveal" id="serviceLehnga">
+        <div class="service-icon">🌺</div>
+        <h3>Lehenga & Bridal Wear</h3>
+        <p>Bridal lehengas, wedding saree blouses, and heavy occasion wear stitched to perfection with embroidery finishing options.</p>
+        <div class="service-price">Starting ₹1200</div>
+        <div>
+          <span class="service-tag">Bridal</span>
+          <span class="service-tag">Sangeet</span>
+          <span class="service-tag">Mehendi</span>
+        </div>
+      </div>
+      <div class="service-card reveal" id="serviceBeauty">
+        <div class="service-icon">💄</div>
+        <h3>Beauty & Makeup</h3>
+        <p>Full bridal makeup, party makeup, everyday glow facials, threading, waxing, and all parlour services by certified beauticians.</p>
+        <div class="service-price">Starting ₹200</div>
+        <div>
+          <span class="service-tag">Bridal</span>
+          <span class="service-tag">Party</span>
+          <span class="service-tag">Daily Glow</span>
+        </div>
+      </div>
+      <div class="service-card reveal" id="serviceAlteration">
+        <div class="service-icon">🔧</div>
+        <h3>Alterations & Repairs</h3>
+        <p>Expert alterations on any garment — sarees, suits, blouses, jeans. We fix tears, resize, and modify your favourite pieces.</p>
+        <div class="service-price">Starting ₹100</div>
+        <div>
+          <span class="service-tag">Resize</span>
+          <span class="service-tag">Repair</span>
+          <span class="service-tag">Modify</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STITCHING TYPES ============ -->
+  <section class="stitching" id="stitching">
+    <div class="text-center reveal">
+      <div class="section-tag">Stitching Guide</div>
+      <h2 class="section-title">Types of <span class="accent">Stitching</span></h2>
+      <p class="section-desc">Explore our wide range of stitching styles — click on any type to learn more about the design, measurements, and pricing.</p>
+    </div>
+    <div class="stitching-tabs reveal">
+      <button class="tab-btn active" data-tab="blouse" id="tabBlouse">Covered Blouse</button>
+      <button class="tab-btn" data-tab="salwar" id="tabSalwar">Salwar Suit</button>
+      <button class="tab-btn" data-tab="lehenga" id="tabLehenga">Lehenga Choli</button>
+      <button class="tab-btn" data-tab="kurti" id="tabKurti">Kurti</button>
+      <button class="tab-btn" data-tab="saree" id="tabSaree">Saree Blouse</button>
+      <button class="tab-btn" data-tab="indo" id="tabIndo">Indo-Western</button>
+    </div>
+
+    <!-- Blouse -->
+    <div class="stitching-content active" id="tab-blouse">
+      <div class="stitching-details reveal">
+        <h3>Covered Blouse Stitching</h3>
+        <p>Our specialty! We design fully covered blouses that maintain modesty while exuding elegance. Available in cotton, silk, georgette, net, and brocade fabrics.</p>
+        <ul class="feature-list">
+          <li>High neck designs with mirror work</li>
+          <li>Full sleeve with lace or plain border</li>
+          <li>Elbow sleeve with embroidered hem</li>
+          <li>Princess cut for perfect shape</li>
+          <li>Potli button or hook-and-eye back closure</li>
+          <li>Padded or unpadded cup options</li>
+          <li>Matching fall / piping available</li>
+        </ul>
+        <div class="stitching-price-range">
+          <div>
+            <div class="price-label">Price Range</div>
+            <div class="price-value">₹350 – ₹1200</div>
+          </div>
+          <a href="#booking" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Book Now →</a>
+        </div>
+      </div>
+      <div class="stitching-image-box reveal">
+        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80" alt="Covered Blouse" />
+        <div class="overlay-text">✦ Our Specialty</div>
+      </div>
+    </div>
+
+    <!-- Salwar -->
+    <div class="stitching-content" id="tab-salwar">
+      <div class="stitching-details reveal">
+        <h3>Salwar Suit Stitching</h3>
+        <p>From simple cotton daily-wear to heavy embroidered party sets, we stitch every salwar suit with care and exact measurements for a flattering silhouette.</p>
+        <ul class="feature-list">
+          <li>Anarkali — floor-length flared kameez</li>
+          <li>Patiala salwar — relaxed, pleated style</li>
+          <li>Churidar — fitted, stylish cut</li>
+          <li>Palazzo set — wide-leg trousers</li>
+          <li>Straight cut kameez + trouser</li>
+          <li>Sharara set with embellishments</li>
+          <li>Custom dupatta hemming included</li>
+        </ul>
+        <div class="stitching-price-range">
+          <div>
+            <div class="price-label">Price Range</div>
+            <div class="price-value">₹500 – ₹2000</div>
+          </div>
+          <a href="#booking" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Book Now →</a>
+        </div>
+      </div>
+      <div class="stitching-image-box reveal">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt="Salwar Suit" />
+        <div class="overlay-text">✦ 10+ Cuts Available</div>
+      </div>
+    </div>
+
+    <!-- Lehenga -->
+    <div class="stitching-content" id="tab-lehenga">
+      <div class="stitching-details reveal">
+        <h3>Lehenga Choli Stitching</h3>
+        <p>Make every celebration unforgettable. Our bridal and festive lehengas are crafted with precision, from the flare of the skirt to the fitting of the choli.</p>
+        <ul class="feature-list">
+          <li>Bridal lehenga with custom embroidery</li>
+          <li>Circular, semi-circular, mermaid cuts</li>
+          <li>Crop choli, long-sleeve choli, cape-style</li>
+          <li>Dupatta draping consultation included</li>
+          <li>Heavy work finishing — zari, zardosi, mirror</li>
+          <li>Ready fabric or bring your own material</li>
+          <li>3 fitting sessions for bridal orders</li>
+        </ul>
+        <div class="stitching-price-range">
+          <div>
+            <div class="price-label">Price Range</div>
+            <div class="price-value">₹1200 – ₹8000</div>
+          </div>
+          <a href="#booking" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Book Now →</a>
+        </div>
+      </div>
+      <div class="stitching-image-box reveal">
+        <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=600&q=80" alt="Lehenga Choli" />
+        <div class="overlay-text">✦ Bridal Specialist</div>
+      </div>
+    </div>
+
+    <!-- Kurti -->
+    <div class="stitching-content" id="tab-kurti">
+      <div class="stitching-details reveal">
+        <h3>Kurti Stitching</h3>
+        <p>Modern kurtis for college, office, or casual wear. We help you design the perfect kurti — from neckline choice to sleeve style and hemline length.</p>
+        <ul class="feature-list">
+          <li>A-line flared kurti — timeless elegance</li>
+          <li>Straight cut kurti — office-friendly</li>
+          <li>Asymmetric kurti — trendy, chic</li>
+          <li>Front-slit high-low kurti</li>
+          <li>Jacket-style layered kurti</li>
+          <li>Embroidered yoke or gota-patti work</li>
+          <li>Co-ord set option (kurti + palazzo)</li>
+        </ul>
+        <div class="stitching-price-range">
+          <div>
+            <div class="price-label">Price Range</div>
+            <div class="price-value">₹300 – ₹900</div>
+          </div>
+          <a href="#booking" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Book Now →</a>
+        </div>
+      </div>
+      <div class="stitching-image-box reveal">
+        <img src="https://images.unsplash.com/photo-1585914924626-15adac1e6402?w=600&q=80" alt="Kurti" />
+        <div class="overlay-text">✦ Daily Wear Specialist</div>
+      </div>
+    </div>
+
+    <!-- Saree Blouse -->
+    <div class="stitching-content" id="tab-saree">
+      <div class="stitching-details reveal">
+        <h3>Saree Blouse Stitching</h3>
+        <p>The perfect blouse makes the whole saree look stunning. We stitch custom saree blouses with exact measurements and any design you choose.</p>
+        <ul class="feature-list">
+          <li>Back neck design — V, U, round, boat</li>
+          <li>Front neck — sweetheart, square, scoop</li>
+          <li>Sleeveless, short, elbow, full sleeve</li>
+          <li>Backless, halter, cold-shoulder styles</li>
+          <li>Readymade blouse alteration available</li>
+          <li>Embroidery, bead work, sequin finishing</li>
+          <li>Fall & pico service for sarees too</li>
+        </ul>
+        <div class="stitching-price-range">
+          <div>
+            <div class="price-label">Price Range</div>
+            <div class="price-value">₹300 – ₹1500</div>
+          </div>
+          <a href="#booking" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Book Now →</a>
+        </div>
+      </div>
+      <div class="stitching-image-box reveal">
+        <img src="https://images.unsplash.com/photo-1591543620767-582b2e76369e?w=600&q=80" alt="Saree Blouse" />
+        <div class="overlay-text">✦ 50+ Neck Designs</div>
+      </div>
+    </div>
+
+    <!-- Indo Western -->
+    <div class="stitching-content" id="tab-indo">
+      <div class="stitching-details reveal">
+        <h3>Indo-Western Stitching</h3>
+        <p>Blend the best of both worlds. We create trendy Indo-Western fusion outfits perfect for modern occasions — from dhoti pants to cape gowns.</p>
+        <ul class="feature-list">
+          <li>Dhoti pants with fusion kurta</li>
+          <li>Indo-western gown with trail</li>
+          <li>Cape blouse + saree skirt combo</li>
+          <li>Jacket kurti with palazzo</li>
+          <li>Crop top + high-waist skirt</li>
+          <li>Draped gown with belt accent</li>
+          <li>Custom fabric combination allowed</li>
+        </ul>
+        <div class="stitching-price-range">
+          <div>
+            <div class="price-label">Price Range</div>
+            <div class="price-value">₹800 – ₹4000</div>
+          </div>
+          <a href="#booking" class="btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Book Now →</a>
+        </div>
+      </div>
+      <div class="stitching-image-box reveal">
+        <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=600&q=80" alt="Indo Western" />
+        <div class="overlay-text">✦ Fusion Specialist</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEAUTY PARLOUR ============ -->
+  <section class="beauty" id="beauty">
+    <div class="text-center reveal">
+      <div class="section-tag">Parlour Services</div>
+      <h2 class="section-title">Beauty <span class="accent">Treatments</span></h2>
+      <p class="section-desc">Step in and let us pamper you. From bridal makeup to everyday skin care — our trained beauticians take care of every need.</p>
+    </div>
+    <div class="beauty-grid">
+      <div class="beauty-card reveal" id="beautyMakeup">
+        <span class="beauty-emoji">💄</span>
+        <h4>Bridal Makeup</h4>
+        <p>Full bridal transformation — base, eyes, lips, setting. HD, airbrush & traditional available.</p>
+        <div class="price">₹3000 – ₹12,000</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyParty">
+        <span class="beauty-emoji">✨</span>
+        <h4>Party Makeup</h4>
+        <p>Glam party looks for sangeet, reception, festivals, and special occasions.</p>
+        <div class="price">₹800 – ₹2500</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyFacial">
+        <span class="beauty-emoji">🌸</span>
+        <h4>Skin Facial & Cleanup</h4>
+        <p>Brightening, anti-acne, tan removal, and hydrating facials for glowing skin.</p>
+        <div class="price">₹300 – ₹1800</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyThreading">
+        <span class="beauty-emoji">🧵</span>
+        <h4>Threading & Waxing</h4>
+        <p>Eyebrow shaping, upper lip, full face threading. Waxing for arms, legs, full body.</p>
+        <div class="price">₹30 – ₹600</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyHair">
+        <span class="beauty-emoji">💇‍♀️</span>
+        <h4>Hair Styling & Treatment</h4>
+        <p>Haircuts, blow dry, straightening, curling, highlights, keratin, and hair spa.</p>
+        <div class="price">₹200 – ₹4000</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyMehndi">
+        <span class="beauty-emoji">🌿</span>
+        <h4>Mehendi Design</h4>
+        <p>Bridal full-hand mehendi, Arabic, Indo-Arabic, and simple festival mehendi designs.</p>
+        <div class="price">₹200 – ₹3000</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyMani">
+        <span class="beauty-emoji">💅</span>
+        <h4>Manicure & Pedicure</h4>
+        <p>Classic, spa, crystal, and gel nail extensions. Foot spa for tired feet.</p>
+        <div class="price">₹200 – ₹1500</div>
+      </div>
+      <div class="beauty-card reveal" id="beautyEyelash">
+        <span class="beauty-emoji">👁️</span>
+        <h4>Eyelash Extension & Tinting</h4>
+        <p>Classic, volume, mega-volume lashes and eyebrow tinting for defined eyes.</p>
+        <div class="price">₹500 – ₹2000</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why-us" id="whyus">
+    <div class="why-grid">
+      <div>
+        <div class="section-tag">Why Us</div>
+        <h2 class="section-title">Why Choose <span class="accent">Shringar?</span></h2>
+        <p class="section-desc">We don't just stitch clothes — we craft confidence. Here's what makes us different.</p>
+        <div class="why-features">
+          <div class="why-feature reveal" id="featureFit">
+            <div class="why-feature-icon">📏</div>
+            <div class="why-feature-text">
+              <h4>Precision Measurements</h4>
+              <p>Expert tailors take over 20 measurements to ensure a perfect fit every single time.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal" id="featureDelivery">
+            <div class="why-feature-icon">⏱️</div>
+            <div class="why-feature-text">
+              <h4>On-Time Delivery</h4>
+              <p>We respect your time. Orders delivered on the promised date, always. Rush service available.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal" id="featurePrivacy">
+            <div class="why-feature-icon">🔒</div>
+            <div class="why-feature-text">
+              <h4>100% Ladies-Only Parlour</h4>
+              <p>A completely private, ladies-only space so you can feel safe and comfortable throughout.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal" id="featureHygiene">
+            <div class="why-feature-icon">✅</div>
+            <div class="why-feature-text">
+              <h4>Hygiene & Certified Beauticians</h4>
+              <p>All beauty tools are sterilized after every use. Our beauticians are professionally certified.</p>
+            </div>
+          </div>
+          <div class="why-feature reveal" id="featureCustom">
+            <div class="why-feature-icon">🎨</div>
+            <div class="why-feature-text">
+              <h4>Fully Customizable Designs</h4>
+              <p>Bring any reference photo or describe your dream look — we'll make it exactly as you want.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal">
+        <div class="why-main-card">
+          <span class="why-big-icon">🌸</span>
+          <h3>Over 12 Years of Excellence</h3>
+          <p>Serving ladies across our community with love, skill, and dedication since 2012.</p>
+          <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem;">
+            <div>
+              <div style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold);">4.9★</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Average Rating</div>
+            </div>
+            <div>
+              <div style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--primary-light);">98%</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Repeat Customers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="text-center reveal">
+      <div class="section-tag">Our Work</div>
+      <h2 class="section-title">Gallery of <span class="accent">Creations</span></h2>
+      <p class="section-desc">A glimpse of the beautiful outfits and looks we've created for our clients.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&q=80" alt="Covered Blouse Collection" />
+        <div class="gallery-overlay"><span>✦ Covered Blouse Collection</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&q=80" alt="Salwar Suit" />
+        <div class="gallery-overlay"><span>✦ Salwar Suit</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=500&q=80" alt="Bridal Lehenga" />
+        <div class="gallery-overlay"><span>✦ Bridal Lehenga</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1585914924626-15adac1e6402?w=500&q=80" alt="Designer Kurti" />
+        <div class="gallery-overlay"><span>✦ Designer Kurti</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=500&q=80" alt="Indo Western" />
+        <div class="gallery-overlay"><span>✦ Indo-Western Fusion</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="booking" id="booking">
+    <div class="text-center reveal">
+      <div class="section-tag">Appointments</div>
+      <h2 class="section-title">Book Your <span class="accent">Appointment</span></h2>
+      <p class="section-desc">Fill in the details below and we'll confirm your appointment within a few hours.</p>
+    </div>
+    <div class="booking-form-wrapper reveal">
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="bName">Full Name *</label>
+            <input type="text" id="bName" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="bPhone">Phone Number *</label>
+            <input type="tel" id="bPhone" placeholder="10-digit mobile number" required />
+          </div>
+          <div class="form-group">
+            <label for="bService">Service Required *</label>
+            <select id="bService" required>
+              <option value="">Select a service</option>
+              <optgroup label="Tailoring Services">
+                <option value="covered_blouse">Covered Blouse Stitching</option>
+                <option value="salwar_suit">Salwar Suit Stitching</option>
+                <option value="lehenga">Lehenga / Bridal Wear</option>
+                <option value="kurti">Kurti / Tops</option>
+                <option value="saree_blouse">Saree Blouse</option>
+                <option value="indo_western">Indo-Western Outfit</option>
+                <option value="alteration">Alteration / Repair</option>
+              </optgroup>
+              <optgroup label="Beauty Services">
+                <option value="bridal_makeup">Bridal Makeup</option>
+                <option value="party_makeup">Party Makeup</option>
+                <option value="facial">Facial / Cleanup</option>
+                <option value="threading_waxing">Threading / Waxing</option>
+                <option value="hair">Hair Styling / Treatment</option>
+                <option value="mehendi">Mehendi Design</option>
+                <option value="manicure">Manicure / Pedicure</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bDate">Preferred Date *</label>
+            <input type="date" id="bDate" required />
+          </div>
+          <div class="form-group">
+            <label for="bTime">Preferred Time *</label>
+            <select id="bTime" required>
+              <option value="">Select time slot</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="16:00">4:00 PM</option>
+              <option value="17:00">5:00 PM</option>
+              <option value="18:00">6:00 PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bWhatsapp">WhatsApp Number</label>
+            <input type="tel" id="bWhatsapp" placeholder="If different from above" />
+          </div>
+          <div class="form-group full-width">
+            <label for="bNotes">Special Requests / Notes</label>
+            <textarea id="bNotes" placeholder="Describe your design preference, fabric choice, reference image link, or any special requirement..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary form-submit" id="bookingSubmitBtn">✦ Book My Appointment</button>
+        <div class="success-msg" id="successMsg"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="text-center reveal">
+      <div class="section-tag">Client Stories</div>
+      <h2 class="section-title">What Our <span class="accent">Clients Say</span></h2>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testimonial-card reveal" id="testimonial1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"My bridal lehenga was absolutely stunning. They understood exactly what I wanted and delivered it two days before my wedding. The covered blouse they made was gorgeous — high neck with full sleeve in brocade fabric. Highly recommend!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">P</div>
+          <div>
+            <div class="author-name">Priya Sharma</div>
+            <div class="author-loc">📍 Rajkot, Gujarat</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal" id="testimonial2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I've been getting my blouses stitched here for 3 years and the quality never disappoints. The ladies-only environment makes me feel so comfortable. Best tailoring in town without a doubt."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">F</div>
+          <div>
+            <div class="author-name">Fatima Khan</div>
+            <div class="author-loc">📍 Surat, Gujarat</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal" id="testimonial3">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Got my bridal makeup and mehendi done here. The beautician was so skilled — exactly the traditional look I wanted. My photos came out so beautiful. The parlour is very hygienic and the staff is warm."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <div class="author-name">Anita Patel</div>
+            <div class="author-loc">📍 Vadodara, Gujarat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div>
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Visit or <span class="accent">Contact Us</span></h2>
+        <p class="section-desc">We'd love to hear from you! Drop by our parlour or reach out through any channel below.</p>
+        <div class="contact-info">
+          <div class="contact-item reveal" id="contactAddress">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <h4>Our Location</h4>
+              <p>123, Main Market Road, Near Laxmi Mandir,<br/>Rajkot – 360001, Gujarat</p>
+            </div>
+          </div>
+          <div class="contact-item reveal" id="contactPhone">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <h4>Call / WhatsApp</h4>
+              <p>+91 99999 99999</p>
+            </div>
+          </div>
+          <div class="contact-item reveal" id="contactEmail">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>shringar.parlour@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item reveal" id="contactHours">
+            <div class="contact-item-icon">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 8:00 PM<br/>Sunday: 10:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <div class="social-link" title="Instagram">📸</div>
+          <div class="social-link" title="Facebook">👥</div>
+          <div class="social-link" title="YouTube">▶️</div>
+          <div class="social-link" title="WhatsApp">💬</div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 1.5rem; font-size: 1.3rem;">Send a Message</h3>
+        <form id="contactForm">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="cName">Your Name</label>
+            <input type="text" id="cName" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="cEmail">Email Address</label>
+            <input type="email" id="cEmail" placeholder="your@email.com" />
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="cPhone">Phone Number</label>
+            <input type="tel" id="cPhone" placeholder="Your phone number" />
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" placeholder="Tell us how we can help you..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; padding: 0.9rem; font-size: 0.95rem; border: none; cursor: pointer;">Send Message ✦</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">🌸</div>
+          <div>
+            <div class="logo-text">Shringar</div>
+            <span class="logo-sub">Tailoring & Beauty</span>
+          </div>
+        </div>
+        <p>Crafting confidence for every woman through precise stitching and premium beauty treatments. Proudly serving our community since 2012.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Stitching</h4>
+        <ul>
+          <li><a href="#stitching">Covered Blouse</a></li>
+          <li><a href="#stitching">Salwar Suit</a></li>
+          <li><a href="#stitching">Lehenga Choli</a></li>
+          <li><a href="#stitching">Kurti & Tops</a></li>
+          <li><a href="#stitching">Saree Blouse</a></li>
+          <li><a href="#stitching">Indo-Western</a></li>
+          <li><a href="#services">Alterations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Beauty</h4>
+        <ul>
+          <li><a href="#beauty">Bridal Makeup</a></li>
+          <li><a href="#beauty">Party Makeup</a></li>
+          <li><a href="#beauty">Facials</a></li>
+          <li><a href="#beauty">Threading & Waxing</a></li>
+          <li><a href="#beauty">Hair Styling</a></li>
+          <li><a href="#beauty">Mehendi</a></li>
+          <li><a href="#beauty">Manicure / Pedicure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#whyus">Why Choose Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <div>© 2024 <span>Shringar Tailoring & Beauty Parlour</span>. All rights reserved.</div>
+      <div>Made with ❤️ for every Indian woman</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
