@@ -2,6 +2,10 @@
 // config/db.js - MongoDB Connection
 // ============================================
 
+// Force IPv4 DNS resolution (fixes querySrv ECONNREFUSED on some networks)
+const dns = require('dns');
+dns.setDefaultResultOrder('ipv4first');
+
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

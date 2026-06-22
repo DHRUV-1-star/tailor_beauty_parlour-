@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shringar Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+  <!-- ===== LOGIN SCREEN ===== -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-bg">
+      <div class="login-orb orb1"></div>
+      <div class="login-orb orb2"></div>
+      <div class="login-orb orb3"></div>
+    </div>
+    <div class="login-card">
+      <div class="login-logo">
+        <div class="login-logo-icon">✦</div>
+        <div>
+          <div class="login-logo-text">Shringar</div>
+          <div class="login-logo-sub">Admin Portal</div>
+        </div>
+      </div>
+      <h2 class="login-title">Welcome Back</h2>
+      <p class="login-subtitle">Sign in to manage your parlour</p>
+      <form id="loginForm" class="login-form">
+        <div class="field-group">
+          <label for="adminEmail">Email Address</label>
+          <div class="input-wrap">
+            <span class="input-icon">✉</span>
+            <input type="email" id="adminEmail" placeholder="admin@shringar.com" required />
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="adminPassword">Password</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔒</span>
+            <input type="password" id="adminPassword" placeholder="Enter password" required />
+            <button type="button" id="togglePass" class="toggle-pass">👁</button>
+          </div>
+        </div>
+        <div id="loginError" class="login-error"></div>
+        <button type="submit" class="login-btn" id="loginBtn">
+          <span id="loginBtnText">Sign In</span>
+          <span id="loginSpinner" class="spinner hidden"></span>
+        </button>
+      </form>
+      <p class="login-hint">Use your admin email and password</p>
+    </div>
+  </div>
+
+  <!-- ===== MAIN DASHBOARD ===== -->
+  <div id="dashboard" class="dashboard hidden">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon">✦</div>
+        <div>
+          <div class="sidebar-logo-text">Shringar</div>
+          <div class="sidebar-logo-sub">Admin</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-page="overview" id="nav-overview">
+          <span class="nav-icon">📊</span>
+          <span>Overview</span>
+        </a>
+        <a href="#" class="nav-item" data-page="bookings" id="nav-bookings">
+          <span class="nav-icon">📅</span>
+          <span>Bookings</span>
+          <span class="nav-badge" id="pendingBadge">0</span>
+        </a>
+        <a href="#" class="nav-item" data-page="today" id="nav-today">
+          <span class="nav-icon">🗓️</span>
+          <span>Today</span>
+        </a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="admin-info">
+          <div class="admin-avatar">A</div>
+          <div>
+            <div class="admin-name" id="adminName">Admin</div>
+            <div class="admin-role">Administrator</div>
+          </div>
+        </div>
+        <button class="logout-btn" id="logoutBtn">⎋ Logout</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+        <div class="topbar-title" id="pageTitle">Overview</div>
+        <div class="topbar-right">
+          <div class="topbar-date" id="topbarDate"></div>
+          <button class="refresh-btn" id="refreshBtn" title="Refresh">↻</button>
+        </div>
+      </header>
+
+      <!-- ===== OVERVIEW PAGE ===== -->
+      <section class="page active" id="page-overview">
+        <div class="page-header">
+          <h1 class="page-h1">Dashboard Overview</h1>
+          <p class="page-sub">Your parlour at a glance</p>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">📅</div>
+            <div class="stat-body">
+              <div class="stat-label">Total Bookings</div>
+              <div class="stat-value" id="statTotal">—</div>
+            </div>
+            <div class="stat-glow"></div>
+          </div>
+          <div class="stat-card gold">
+            <div class="stat-icon">⏳</div>
+            <div class="stat-body">
+              <div class="stat-label">Pending</div>
+              <div class="stat-value" id="statPending">—</div>
+            </div>
+            <div class="stat-glow"></div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-icon">✅</div>
+            <div class="stat-body">
+              <div class="stat-label">Confirmed</div>
+              <div class="stat-value" id="statConfirmed">—</div>
+            </div>
+            <div class="stat-glow"></div>
+          </div>
+          <div class="stat-card blue">
+            <div class="stat-icon">🗓️</div>
+            <div class="stat-body">
+              <div class="stat-label">Today's Appointments</div>
+              <div class="stat-value" id="statToday">—</div>
+            </div>
+            <div class="stat-glow"></div>
+          </div>
+        </div>
+
+        <!-- Recent Bookings -->
+        <div class="section-card">
+          <div class="section-card-header">
+            <h2>Recent Bookings</h2>
+            <a href="#" class="view-all" data-page="bookings">View All →</a>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table" id="recentTable">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Service</th>
+                  <th>Date & Time</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="recentTableBody">
+                <tr><td colspan="5" class="table-loading">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== BOOKINGS PAGE ===== -->
+      <section class="page hidden" id="page-bookings">
+        <div class="page-header">
+          <h1 class="page-h1">All Bookings</h1>
+          <p class="page-sub">Manage and update appointment statuses</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-bar">
+          <div class="filter-group">
+            <label>Filter by Status</label>
+            <select id="filterStatus" class="filter-select">
+              <option value="">All Statuses</option>
+              <option value="pending">Pending</option>
+              <option value="confirmed">Confirmed</option>
+              <option value="completed">Completed</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Search</label>
+            <input type="text" id="filterSearch" class="filter-input" placeholder="Name or phone..." />
+          </div>
+          <button class="apply-filter-btn" id="applyFilter">Apply Filters</button>
+        </div>
+
+        <div class="section-card">
+          <div class="table-wrap">
+            <table class="data-table" id="allBookingsTable">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Phone</th>
+                  <th>Service</th>
+                  <th>Date & Time</th>
+                  <th>Status</th>
+                  <th>Payment</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="allBookingsBody">
+                <tr><td colspan="7" class="table-loading">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TODAY PAGE ===== -->
+      <section class="page hidden" id="page-today">
+        <div class="page-header">
+          <h1 class="page-h1">Today's Appointments</h1>
+          <p class="page-sub" id="todayDateLabel"></p>
+        </div>
+        <div id="todayCards" class="today-cards">
+          <div class="table-loading">Loading...</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== STATUS UPDATE MODAL ===== -->
+  <div id="statusModal" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Update Booking</h3>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-booking-info" id="modalBookingInfo"></div>
+        <div class="field-group">
+          <label>Update Status</label>
+          <div class="status-buttons" id="statusButtons"></div>
+        </div>
+        <div class="field-group">
+          <label>Payment</label>
+          <div class="payment-toggle">
+            <input type="checkbox" id="modalPaid" class="toggle-input" />
+            <label for="modalPaid" class="toggle-label">Mark as Paid</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cancel" id="modalCancel">Cancel</button>
+        <button class="btn-save" id="modalSave">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

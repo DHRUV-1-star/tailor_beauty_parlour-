@@ -105,8 +105,7 @@ customerSchema.methods.addOrder = async function(amount) {
 };
 
 // Indexes
-customerSchema.index({ phone: 1 }, { unique: true });
-customerSchema.index({ email: 1 }, { sparse: true });
+// Note: phone (unique) and email (sparse) are already indexed via schema field options
 customerSchema.index({ name: 'text' }); // text search
 
 const Customer = mongoose.model('Customer', customerSchema);
