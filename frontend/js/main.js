@@ -221,7 +221,7 @@ if (contactForm) {
 const waBtn = document.getElementById('whatsappFloat');
 if (waBtn) {
   waBtn.addEventListener('click', () => {
-    const phone = '919999999999'; // Replace with actual number
+    const phone = '917990702494'; // Rahi Tailors - Mehsana
     const msg = encodeURIComponent('Hello! I\'d like to book an appointment at Shringar Parlour.');
     window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
   });
