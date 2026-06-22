@@ -2,7 +2,7 @@
 // admin.js - Shringar Admin Dashboard Logic
 // ============================================
 
-const API = 'http://localhost:5000/api';
+const API = 'https://tailor-beauty-parlour-1.onrender.com/api';
 let authToken = localStorage.getItem('shringar_admin_token') || null;
 let allBookings = [];
 let currentBookingId = null;

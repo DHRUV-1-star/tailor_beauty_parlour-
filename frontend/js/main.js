@@ -161,7 +161,7 @@ if (bookingForm) {
     submitBtn.disabled = true;
 
     try {
-      const res = await fetch('http://localhost:5000/api/bookings', {
+      const res = await fetch('https://tailor-beauty-parlour-1.onrender.com/api/bookings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -198,7 +198,7 @@ if (contactForm) {
     btn.textContent = 'Sending...';
     btn.disabled = true;
     try {
-      await fetch('http://localhost:5000/api/contact', {
+      await fetch('https://tailor-beauty-parlour-1.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
